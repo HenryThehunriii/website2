@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Pong Game</title>
+    <link rel="stylesheet" href="pong.css">
+    <link rel="icon" href='../images/joystick.png' type="image/picture">
+</head>
+<body>
+
+    <div class = "light_wrapper">
+        <div style="font-size: 30px;">AD/buttons for movement</div>
+        <div class = "giant_font"><span>Score:</span>
+            <span id = "score">--</span>
+    </div>
+    <canvas id="gameCanvas" width="1000" height="500"></canvas>
+    <div id = "buttons">
+        <div style = "display:block">
+            <div>
+        <button class = "blue_button" onclick = "directionChange('left')">←</button>
+        <span id = "noneButton"></span>
+        <button class = "blue_button" onclick = "directionChange('right')">→</button></div>
+
+    <div><a href="../index.html"><button class = "red_button">←Back</button></a></div><br>
+    <button class="green_button" onclick="window.location.reload()">Refresh</button><br></div>
+</div>
+    <script src="pongGame.js"></script>
+</body>
+</html>
